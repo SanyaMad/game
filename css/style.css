@@ -1,5 +1,7 @@
 html{
     background: url('../img/grace.jpg');
+    padding: 0;
+    margin: 0;
 }
 .container{
     position: relative;
@@ -8,7 +10,30 @@ html{
     width: 100%;
 }
 .mem{
+    padding: 50px;
     width: 150px;
     height: 150px;
     position: absolute;
+}
+.pause__block{
+    background: rgba(90, 131, 88, 0.787);
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+    margin-top: 400px;
+    width: 800px;
+    z-index: 999;
+}
+.pause{
+    display: none;
+}
+.score__block{
+    background: rgba(90, 131, 88, 0.787);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 50px;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
 } 

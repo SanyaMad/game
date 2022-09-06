@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_move__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/move */ \"./src/modules/move.js\");\n\r\n\r\n(0,_modules_move__WEBPACK_IMPORTED_MODULE_0__[\"default\"])()\n\n//# sourceURL=webpack://igra/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_move__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/move */ \"./src/modules/move.js\");\n/* harmony import */ var _modules_pause__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/pause */ \"./src/modules/pause.js\");\n/* harmony import */ var _modules_score__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/score */ \"./src/modules/score.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n(0,_modules_move__WEBPACK_IMPORTED_MODULE_0__[\"default\"])()\r\n;(0,_modules_pause__WEBPACK_IMPORTED_MODULE_1__[\"default\"])()\r\n;(0,_modules_score__WEBPACK_IMPORTED_MODULE_2__[\"default\"])()\n\n//# sourceURL=webpack://igra/./src/index.js?");
 
 /***/ }),
 
@@ -27,6 +27,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst moveCharacter = () =>{\r\n    const character = document.querySelector('.mem')\r\n    let x = 0\r\n    let y = 0\r\n    document.addEventListener('keydown', function(event)    {\r\n        if (event.code == 'ArrowDown'){\r\n            y = +y + 20\r\n            character.style.top = y+'px'\r\n            console.log(\"вниз\");\r\n        }\r\n        else if (event.code == 'ArrowUp'){\r\n            y = +y - 20\r\n            character.style.top = y+'px'\r\n            console.log(\"вверх\");\r\n        }\r\n        else if (event.code == 'ArrowRight'){\r\n            x = +x + 20\r\n            character.style.left = x+'px'\r\n            console.log(\"вправо\");\r\n        }\r\n        else if (event.code == 'ArrowLeft'){\r\n            x = +x - 20\r\n            character.style.left = x+'px'\r\n            console.log(\"влево\");\r\n        }\r\n    });\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (moveCharacter);\r\n\r\n\r\n\n\n//# sourceURL=webpack://igra/./src/modules/move.js?");
+
+/***/ }),
+
+/***/ "./src/modules/pause.js":
+/*!******************************!*\
+  !*** ./src/modules/pause.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst pauseGame = () =>{\r\n    const pauseWindow = document.querySelector('.pause')\r\n    let i = 0\r\n    document.addEventListener('keydown', function(event){\r\n        if (event.code == \"Escape\"){\r\n            if(i == 0){\r\n                pauseWindow.style.display = 'flex'\r\n                i = 1  \r\n            }\r\n            else{\r\n                pauseWindow.style.display = 'none'\r\n                i = 0\r\n            }\r\n        }\r\n    })\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pauseGame);\n\n//# sourceURL=webpack://igra/./src/modules/pause.js?");
+
+/***/ }),
+
+/***/ "./src/modules/score.js":
+/*!******************************!*\
+  !*** ./src/modules/score.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst addScore = () =>{\r\n    const score = document.querySelector('.score')\r\n    let i = 1\r\n    document.addEventListener('keydown',function(event){\r\n        if(event.code == 'ArrowDown'){\r\n            \r\n        }\r\n    })\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (addScore);\n\n//# sourceURL=webpack://igra/./src/modules/score.js?");
 
 /***/ })
 
